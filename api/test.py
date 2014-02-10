@@ -5,7 +5,7 @@ import sys
 import json
 from flask import Flask, jsonify,request
 import traceback
-gc = gspread.login()
+gc = gspread.login('test','password')
 
 wks = gc.open('test').sheet1
 
